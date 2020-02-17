@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently 'npm run dev-server' 'npm run dev-bundle' ",
     "dev-server": "cross-env NODE_PATH=./src nodemon --exec babel-node src/server/server.js --ignore dist/",
     "dev-bundle": "webpack -w -d",
     "prd-bundle": "webpack -p",
