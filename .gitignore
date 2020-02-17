@@ -1,1 +1,9 @@
 node_modules/
+public/bundles/
+build/
+coverage/
+.reactful.json
+.env
+.vscode
+
+

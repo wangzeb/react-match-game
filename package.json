@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev-server": "nodemon --exec babel-node src/server/server.js --ignore dist/",
+    "dev-server": "cross-env NODE_PATH=./src nodemon --exec babel-node src/server/server.js --ignore dist/",
     "dev-bundle": "webpack -w -d",
-    "prd-bundle" : "webpack -p",
+    "prd-bundle": "webpack -p",
     "test": "jest"
   },
   "repository": {
@@ -25,10 +25,22 @@
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.0",
+    "css-loader": "^3.4.2",
+    "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mini-css-extract-plugin": "^0.9.0",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.13.1",
+    "path": "^0.12.7",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "sass-loader": "^8.0.2",
+    "serialize-javascript": "^3.0.0",
     "webpack": "^4.41.6",
+    "webpack-chunk-hash": "^0.6.0",
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
@@ -39,6 +51,7 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "jest": "^25.1.0",
     "nodemon": "^2.0.2",
-    "react-test-renderer": "^16.12.0"
+    "react-test-renderer": "^16.12.0",
+    "reactful": "^2.0.6"
   }
 }
