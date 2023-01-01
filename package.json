@@ -30,7 +30,7 @@
     "cross-env": "^7.0.0",
     "css-loader": "^6.7.3",
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "fs": "0.0.1-security",
     "mini-css-extract-plugin": "^2.7.2",
     "morgan": "^1.9.1",
